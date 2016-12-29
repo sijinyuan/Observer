@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/carregion"
+    tools:context="com.androiddemo.MainActivity">
+    <LinearLayout android:orientation="vertical"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dip">
+        <TableLayout android:layout_width="fill_parent"
+            android:layout_height="wrap_content" android:paddingLeft="10dip"
+            android:paddingRight="10dip" android:stretchColumns="0,1"
+            android:shrinkColumns="1">
+
+
+
+
+            <TableRow android:paddingTop="10dip" android:paddingBottom="10dip">
+                <TextView android:text="经度：" android:textSize="19sp" />
+                <TextView android:id="@+id/longitude" android:text=""
+                    android:textSize="18sp" />
+            </TableRow>
+
+            <TableRow android:paddingTop="10dip"
+                android:paddingBottom="10dip">
+                <TextView android:text="纬度："
+                    android:textSize="19sp" />
+                <TextView android:id="@+id/latitude" android:text=""
+                    android:textSize="18sp" />
+            </TableRow>
+            <TableRow android:paddingTop="10dip" android:paddingBottom="10dip">
+
+                <TextView android:id="@+id/pickupdata" android:text="是否采集到坐标:"
+                    android:textSize="18sp" />
+                <TextView android:id="@+id/ispicked" android:text="否"
+                    android:textSize="18sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+</RelativeLayout>
